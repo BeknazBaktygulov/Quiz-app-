@@ -36,9 +36,9 @@ const nextQuestion = () => {
       <p>Loading Questions...</p>
       <QuestionCard questionNum={number + 1}
       totalQuestions={TOTAL_QUESTIONS}
-      questions={questions[number].questions}
+      question={questions[number].question}
       answers={questions[number].answers}
-      userAnswers={ userAnswers ? userAnswers[number] : undefined }
+      userAnswer={ userAnswers ? userAnswers[number] : undefined }
       callback={checkAnswer} />
       
       <button className="next" onClick={nextQuestion}>
