@@ -14,7 +14,7 @@ const nextQuestion = () => {
 
 } 
 
-
+function App () {
   return (
     <div className="App">
       <h1>React Quiz</h1>
@@ -31,6 +31,8 @@ const nextQuestion = () => {
       </button>
     </div>
   );
-}
+  }
+
+
 
 export default App;
