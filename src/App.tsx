@@ -49,13 +49,13 @@ const nextQuestion = () => {
   return (
     <div className="App">
       <h1>React Quiz</h1>
+      {gameOver || userAnswers.length === TOTAL_QUESTIONS ? ( 
       <button className="start" onClick={startTrivia}>
         Start
       </button>
-      <p className="score">
-        Score:
-      </p>
-      <p>Loading Questions...</p>
+      ) : null }
+      {!gameOver ?  <p className="score">Score:</p> : null }
+      {loading ? <p>Loading Questions...</p> : null }
       {/* <QuestionCard questionNum={number + 1}
       totalQuestions={TOTAL_QUESTIONS}
       question={questions[number].question}
